@@ -66,7 +66,7 @@ puts "Should be Health Club Manager"
 def get_average_age_for_season(data, season)
   data.map do |season, contestants|
     binding.pry
-    [season, contestants.reduce(0){|sum, contestant| sum + contestant["age"]}]
+    [season, contestants.reduce(0){|sum, contestant| sum + contestant["age"].to_f / contestants.length}]
   end
 end
 
