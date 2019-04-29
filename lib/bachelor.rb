@@ -21,7 +21,7 @@ def get_average_age_for_season(data, season)
 end
 
 def batchelor_data
-	{ 
+	{
 	  "season 30": [
 	    {
 	      "name":      "Beth Smalls",
@@ -29,7 +29,7 @@ def batchelor_data
 	      "hometown":  "Great Falls, Virginia",
 	      "occupation":"Nanny/Freelance Journalist",
 	      "status":    "Winner"
-	    },	
+	    },
 	    {
 	      "name":       "Becca Tilley",
 	      "age":        "27",
