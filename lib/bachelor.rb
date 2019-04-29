@@ -6,10 +6,7 @@ def contestant_hash(data)
 end
 
 def get_first_name_of_season_winner(data, season)
-  data[season].each do |contestant|
-    binding.pry
-    return contestant["name"].split(" ").first.to_s if contestant["status"] == "Winner"
-  end
+  data[season].select {|contestant| contestant["status"] == "Winner"}["name"].split(" ").first
 end
 
 puts
