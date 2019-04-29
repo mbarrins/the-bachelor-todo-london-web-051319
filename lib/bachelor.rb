@@ -10,6 +10,7 @@ def get_first_name_of_season_winner(data, season)
     return contestant["name"].split(" ").first.to_s if contestant["status"] == "Winner"
   end
 end
+
 puts
 puts get_first_name_of_season_winner(data, "season 16")
 puts "Should be Courtney"
@@ -23,8 +24,13 @@ def get_contestant_name(data, occupation)
   contestant_hash(data).select{|contestant, details| details["occupation"] = occupation}.keys
 end
 
-puts get_contestant_name(data, "Model")
 puts
+puts get_contestant_name(data, "Cruise Ship Singer")
+puts "Should be Carly Waddell"
+puts get_contestant_name(data, "Community Organizer")
+puts "Should be Brooke Burchette"
+puts get_contestant_name(data, "Nonprofit director")
+puts "Should be Dianna Martinez"
 
 def count_contestants_by_hometown(data, hometown)
   # code here
@@ -37,3 +43,4 @@ end
 def get_average_age_for_season(data, season)
   # code here
 end
+
