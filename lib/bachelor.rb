@@ -62,7 +62,7 @@ puts "Should be Health Club Manager"
 #     [team, players.reduce(0){|sum, (player,details)| sum + details[:points]}]
 # end.to_h.max_by{|team, points| points}[0]
 
-  
+
 def get_average_age_for_season(data, season)
   data.map do |season, contestants|
     [season, contestants.reduce(0){|sum, contestant| sum + contestant["age"]]
