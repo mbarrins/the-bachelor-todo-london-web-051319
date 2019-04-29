@@ -3,11 +3,12 @@ data = JSON.parse(File.read('spec/fixtures/contestants.json'))
 
 def get_first_name_of_season_winner(data, season)
   data[season].each do |contestant|
+    puts 
     return contestant["name"] if contestant["status"] == "Winner"
   end
 end
 
-puts get_first_name_of_season_winner(data, "season 19")
+get_first_name_of_season_winner(data, "season 19")
 puts
 
 
