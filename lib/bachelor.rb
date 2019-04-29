@@ -2,7 +2,7 @@ require "pry"
 data = JSON.parse(File.read('spec/fixtures/contestants.json'))
 
 def contestant_hash(data)
-  data.values.flatten.map{|contestants| [contestants["name"], contestants]}.to_h
+  data.values.map{|contestants| [contestants["name"], contestants]}.to_h
 end
 
 def get_first_name_of_season_winner(data, season)
