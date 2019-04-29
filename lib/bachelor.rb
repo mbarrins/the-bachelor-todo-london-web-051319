@@ -19,7 +19,6 @@ puts "Should be Emily"
 
 
 def get_contestant_name(data, occupation)
-  # binding.pry
   contestant_hash(data).select{|contestant, details| details["occupation"] == occupation}.keys
 end
 
