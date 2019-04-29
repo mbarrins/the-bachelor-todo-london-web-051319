@@ -1,6 +1,10 @@
 require "pry"
 data = JSON.parse(File.read('spec/fixtures/contestants.json'))
 
+def contestant_hash
+  data.values.flatten.map{|contestants| [contestants["name"], contestants]}.to_h
+end
+
 def get_first_name_of_season_winner(data, season)
   data[season].each do |contestant|
     return contestant["name"].split(" ").first.to_s if contestant["status"] == "Winner"
@@ -12,7 +16,7 @@ puts
 
 
 def get_contestant_name(data, occupation)
-  # code here
+  contestant_hash.select{|contestant, details| details["occupation"] = occupation}
 end
 
 def count_contestants_by_hometown(data, hometown)
@@ -26,6 +30,3 @@ end
 def get_average_age_for_season(data, season)
   # code here
 end
-
-contestant_hash = data.values.flatten.map{|contestants| [contestants["name"], contestants]}.to_h
-puts contestant_hash
