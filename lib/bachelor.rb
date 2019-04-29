@@ -46,7 +46,7 @@ puts count_contestants_by_hometown(data, "San Diego, California")
 puts "Should be 5"
 
 def get_occupation(data, hometown)
-  contestant_hash(data).select{|contestant, details| details["hometown"] == hometown}.keys.first
+  contestant_hash(data).select{|contestant, details| details["hometown"] == hometown}.values.first["occupation"]
 end
 
 puts
