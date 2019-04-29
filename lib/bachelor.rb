@@ -16,7 +16,7 @@ puts
 
 
 def get_contestant_name(data, occupation)
-  contestant_hash.select{|contestant, details| details["occupation"] = occupation}.keys
+  contestant_hash(data).select{|contestant, details| details["occupation"] = occupation}.keys
 end
 
 puts get_contestant_name(data, "Model")
