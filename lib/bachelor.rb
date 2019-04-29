@@ -28,4 +28,4 @@ def get_average_age_for_season(data, season)
 end
 
 contestant_hash = data.values.flatten.map{|contestants| [contestants[:name], contestants]}.to_h
-puts contestatn_hash.first
+puts contestant_hash.first
