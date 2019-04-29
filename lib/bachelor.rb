@@ -6,7 +6,7 @@ def get_first_name_of_season_winner(data, season)
   data[season].select{|contestants| contestants[:status] == "Winner"}
 end
 
-puts get_first_name_of_season_winner(data, "Season 19")
+puts get_first_name_of_season_winner(data, "season 19")
 puts
 
 
