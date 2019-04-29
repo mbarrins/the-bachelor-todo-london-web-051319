@@ -20,7 +20,7 @@ def get_average_age_for_season(data, season)
   # code here
 end
 
-def batchelor_data
+def bachelor_data
 	{
 	  "season 30": [
 	    {
