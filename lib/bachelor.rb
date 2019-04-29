@@ -19,7 +19,7 @@ def get_contestant_name(data, occupation)
   contestant_hash.select{|contestant, details| details["occupation"] = occupation}.keys
 end
 
-puts get_contestant_name(data, occupation)
+puts get_contestant_name(data, "Model")
 puts
 
 def count_contestants_by_hometown(data, hometown)
