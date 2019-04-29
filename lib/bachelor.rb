@@ -68,3 +68,11 @@ def get_average_age_for_season(data, season)
     [season, contestants.reduce(0){|sum, contestant| sum + contestant["age"]]
   end
 end
+
+puts
+puts get_average_age_for_season(data, "season 10")
+puts "Should be 26"
+puts get_average_age_for_season(data, "season 11")
+puts "Should be 27 "
+puts get_average_age_for_season(data, "season 12")
+puts "Should be 26"
