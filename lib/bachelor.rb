@@ -37,6 +37,14 @@ def count_contestants_by_hometown(data, hometown)
   contestant_hash(data).reduce(0){|sum, (contestant, details)| sum + 1 if details["hometown"] == hometown}.keys
 end
 
+puts
+puts count_contestants_by_hometown(data, "New York, New York")
+puts "Should be 4"
+puts count_contestants_by_hometown(data, "Chicago, Illinois")
+puts "Should be 8"
+puts count_contestants_by_hometown(data, "San Diego, California")
+puts "Should be 5"
+
 def get_occupation(data, hometown)
   # code here
 end
