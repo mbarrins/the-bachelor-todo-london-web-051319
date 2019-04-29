@@ -6,7 +6,7 @@ def contestant_hash(data)
 end
 
 def get_first_name_of_season_winner(data, season)
-  data[season].select {|contestant| contestant["status"] == "Winner"}.[0]["name"].split(" ").first
+  data[season].select {|contestant| contestant["status"] == "Winner"}[0]["name"].split(" ").first
 end
 
 puts
