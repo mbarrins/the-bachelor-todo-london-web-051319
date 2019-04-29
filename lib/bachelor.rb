@@ -2,7 +2,7 @@ require "pry"
 data = JSON.parse(File.read('spec/fixtures/contestants.json'))
 
 def get_first_name_of_season_winner(data, season)
-  # binding.pry
+  binding.pry
   data[season].select{|contestants| contestants[:status] == "Winner"}
 end
 
@@ -32,3 +32,4 @@ end
 #   binding.pry
 #   [season, contestants.each_with_object([]){|contestant, arr| arr << contestant[:name]}]
 # end
+# 
