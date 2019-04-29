@@ -8,7 +8,7 @@ def get_first_name_of_season_winner(data, season)
   end
 end
 
-get_first_name_of_season_winner(data, "season 11")
+get_first_name_of_season_winner(data, "season 16")
 puts
 
 
