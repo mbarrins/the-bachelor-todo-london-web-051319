@@ -19,7 +19,7 @@ puts "Should be Emily"
 
 
 def get_contestant_name(data, occupation)
-  contestant_hash(data).select{|contestant, details| details["occupation"] == occupation}.keys
+  contestant_hash(data).select{|contestant, details| details["occupation"] == occupation}.keys[0]
 end
 
 puts
