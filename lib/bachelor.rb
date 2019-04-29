@@ -27,5 +27,5 @@ def get_average_age_for_season(data, season)
   # code here
 end
 
-contestant_hash = bachelor_data.values.flatten.map{|contestants| [contestants[:name], contestants]}.to_h
+contestant_hash = data.values.flatten.map{|contestants| [contestants[:name], contestants]}.to_h
 puts contestatn_hash.first
