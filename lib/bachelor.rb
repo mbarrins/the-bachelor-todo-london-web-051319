@@ -19,4 +19,7 @@ end
 def get_average_age_for_season(data, season)
   # code here
 end
-batchelor_data.map {|season, contestants| [season, contestants.each_with_object([]){|arr,contestant| arr << contestant[:name]}]}
+batchelor_data.map do |season, contestants|
+  binding.pry
+  [season, contestants.each_with_object([]){|arr,contestant| arr << contestant[:name]}]
+end
