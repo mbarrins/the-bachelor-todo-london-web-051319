@@ -46,7 +46,7 @@ puts count_contestants_by_hometown(data, "San Diego, California")
 puts "Should be 5"
 
 def get_occupation(data, hometown)
-  # code here
+  contestant_hash(data).select{|contestant, details| details["hometown"] == hometown}.keys.first
 end
 
 def get_average_age_for_season(data, season)
