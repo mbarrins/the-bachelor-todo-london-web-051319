@@ -10,9 +10,13 @@ def get_first_name_of_season_winner(data, season)
     return contestant["name"].split(" ").first.to_s if contestant["status"] == "Winner"
   end
 end
-
-puts get_first_name_of_season_winner(data, "season 16")
 puts
+puts get_first_name_of_season_winner(data, "season 16")
+puts "Should be Courtney"
+puts get_first_name_of_season_winner(data, "season 10")
+puts "Should be Tessa"
+puts get_first_name_of_season_winner(data, "season 15")
+puts "Should be Emily"
 
 
 def get_contestant_name(data, occupation)
