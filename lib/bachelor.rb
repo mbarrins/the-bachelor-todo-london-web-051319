@@ -57,12 +57,6 @@ puts "Should be Critical care nurse"
 puts get_occupation(data, "Troutdale, Oregon")
 puts "Should be Health Club Manager"
 
-
-# team_player_hash.map do |team, players|
-#     [team, players.reduce(0){|sum, (player,details)| sum + details[:points]}]
-# end.to_h.max_by{|team, points| points}[0]
-
-
 def get_average_age_for_season(data, season)
   data[season].reduce(0){|sum, contestant| sum + contestant["age"].to_f / data[season].length}.round
 end
