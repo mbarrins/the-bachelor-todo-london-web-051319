@@ -34,7 +34,7 @@ puts get_contestant_name(data, "Nonprofit director")
 puts "Should be Dianna Martinez"
 
 def count_contestants_by_hometown(data, hometown)
-  # code here
+  contestant_hash(data).reduce(0){|sum, (contestant, details)| sum + 1 if details["hometown"] == hometown}.keys
 end
 
 def get_occupation(data, hometown)
