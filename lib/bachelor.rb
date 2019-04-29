@@ -59,5 +59,5 @@ end
 
 bachelor_data.map do |season, contestants|
   binding.pry
-  [season, contestants.each_with_object([]){|arr,contestant| arr << contestant[:name]}]
+  [season, contestants.each_with_object([]){|arr,contestant| arr << contestant[:name], arr}]
 end
