@@ -34,4 +34,4 @@ end
 #   binding.pry
 #   [season, contestants.each_with_object([]){|contestant, arr| arr << contestant[:name]}]
 # end
-# 
+#
