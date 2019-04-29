@@ -1,7 +1,7 @@
 require "pry"
 data = JSON.parse(File.read('spec/fixtures/contestants.json'))
 
-def contestant_hash
+def contestant_hash(data)
   data.values.flatten.map{|contestants| [contestants["name"], contestants]}.to_h
 end
 
