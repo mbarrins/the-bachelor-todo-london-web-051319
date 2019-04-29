@@ -64,7 +64,7 @@ puts "Should be Health Club Manager"
 
 
 def get_average_age_for_season(data, season)
-  data[season].reduce(0){|sum, contestant| sum + contestant["age"].to_f / contestants.length}]
+  data[season].reduce(0){|sum, contestant| sum + contestant["age"].to_f / contestants.length}
 end
 
 puts
