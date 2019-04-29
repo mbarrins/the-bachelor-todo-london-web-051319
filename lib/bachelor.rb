@@ -49,6 +49,14 @@ def get_occupation(data, hometown)
   contestant_hash(data).select{|contestant, details| details["hometown"] == hometown}.keys.first
 end
 
+puts
+puts get_occupation(data, "Cranston, Rhode Island")
+puts "Should be Journalist"
+puts get_occupation(data, "Waverly, Nebraska")
+puts "Should be Critical care nurse"
+puts get_occupation(data, "Troutdale, Oregon")
+puts "Should be Health Club Manager"
+
 def get_average_age_for_season(data, season)
   # code here
 end
